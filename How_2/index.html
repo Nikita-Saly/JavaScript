@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система отзывов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Отзывы о продуктах</h1>
+
+    <div id="reviews"></div>
+
+    <h2>Оставьте отзыв</h2>
+    <label for="product-select">Выберите продукт:</label>
+    <select id="product-select">
+        <option value="Apple iPhone 13">Apple iPhone 13</option>
+        <option value="Samsung Galaxy Z Fold 3">Samsung Galaxy Z Fold 3</option>
+        <option value="Sony PlayStation 5">Sony PlayStation 5</option>
+    </select>
+
+    <br><br>
+
+    <textarea id="review-text" rows="5" cols="50" placeholder="Введите ваш отзыв (от 50 до 500 символов)"></textarea>
+    <br>
+    <button onclick="addReview()">Отправить отзыв</button>
+    <p id="error-message" class="error"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
